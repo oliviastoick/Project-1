@@ -3,29 +3,44 @@ document.onkeydown = key;
 
 function key(e) {
 
-  event   = e || window.event;
-  keycode = event.keyCode;
-  box_top  = $('#box').position().top;
-  box_left = $('#box').position().left;
+  let event   = e || window.event;
+  let keycode = event.keyCode;
+  let boxTop  = $('#box').position().top;
 
-  if (keycode == '37') { boxLeft = box_left - 30; }
-  if (keycode == '39') { boxLeft = box_left + 30; }
-  if (keycode == '38') { boxTop = box_top - 30; }
-  if (keycode == '40') { boxTop = box_top + 30; }
+  let boxLeft = $('#box').position().left;
+
+  if (keycode == '37') {
+    boxLeft = boxLeft - 30;
+  }
+  if (keycode == '39') {
+    boxLeft = boxLeft + 30;
+  }
+  if (keycode == '38') {
+   boxTop = boxTop - 30;
+ }
+  if (keycode == '40') {
+   boxTop = boxTop + 30;
+ }
 
 $('#box').css({top: boxTop, left: boxLeft});
 }
+let box1 = document.getElementById('box');
+// check if player 1 won
+    if (box1.style.left > 823) {
+      alert('Player 1 wins!!!!!');
+
+    }
 
 //currently working on collision detection
-if ($('box') == 524) {
-  alert("YOU DIED")
-}
-if ($('box') == 501) {
-  alert("YOU DIED")
-}
-if ($('box') == 415) {
-  alert("YOU DIED")
-}
-if ($('box') == 825) {
-  alert("YOU WIN")
-}
+// if (boxTop > 524) {
+//   alert("YOU DIED")
+// }
+// if ($('#box') <= "501px") {
+//   alert("YOU DIED")
+// }
+// if ($('#box') <= "415px") {
+//   alert("YOU DIED")
+// }
+// if ($('#box') >= 825) {
+//   alert("YOU WIN")
+// }
