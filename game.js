@@ -32,44 +32,48 @@ function checkKey(e) {
   event   = e || window.event;
   keycode = event.keyCode;
 
-  box_top  = $('#box').position().top;
-  box_left = $('#box').position().left;
+  boxTop  = $('#box').position().top;
+  boxLeft = $('#box').position().left;
 
-  //if the keycode is one of the arrow button, move box
+  //move left
   if (keycode == '37') {
-    box_left = box_left - 10;
-     console.log(box_left)
+    boxLeft = boxLeft - 10;
+     console.log(boxLeft)
   }
+  //move right
   if (keycode == '39') {
-   box_left = box_left + 10;
-   console.log(box_left)
+   boxLeft = boxLeft + 10;
+   console.log(boxLeft)
  }
+ //move up
   if (keycode == '38') {
-    box_top = box_top - 10;
-    console.log(box_top)
+    boxTop = boxTop - 10;
+    console.log(boxTop)
   }
+  //move down
   if (keycode == '40') {
-   box_top = box_top + 10;
-   console.log(box_top)
+   boxTop = boxTop + 10;
+   console.log(boxTop)
  }
 
 
-if (box_left > 890) {
+if (boxLeft > 855) {
   alert('YAY YOU WON')
-if (box_left < 1) {
+}
+if (boxLeft < -1) {
   alert('YOU LOSE :(')
 }
-if (box_top < 1) {
+if (boxTop < -8) {
   alert('YOU LOSE :(')
 }
-if (box_top > 35) {
+if (boxTop > 38) {
   alert('YOU LOSE :(')
 }
      // banner.innerHTML = 'YOU WON!!!!!';
       //document.removeEventListener('keyup', game);
-    }
+window.reload
 
-  $('#box').css({top: box_top, left: box_left});
+  $('#box').css({top: boxTop, left: boxLeft});
 }
 
 
