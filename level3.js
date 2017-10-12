@@ -3,9 +3,9 @@ let box1 = document.getElementById('box')
 let cube = $('.cube');
 //let cube = document.getElementByClassName('cube')
 
-function checkKey(e) {
+function checkKey(z) {
 
-  event   = e || window.event;
+  event   = z;
   keycode = event.keyCode;
 
   boxTop  = $('#box').position().top;
@@ -34,19 +34,23 @@ function checkKey(e) {
 
 
 if (boxLeft > 316) {
-  alert('YOU LOSE :(') //location.reload()
+  alert('YOU LOSE :(')
+  location.reload()
 }
 if (boxLeft < -1) {
-  alert('YOU LOSE :(')//location.reload()
+  alert('YOU LOSE :(')
+  location.reload()
 }
 if (boxTop < -8) {
-  alert('YOU LOSE :(')//location.reload()
+  alert('YOU LOSE :(')
+  location.reload()
 }
 if (boxTop > 20 && boxLeft < 296) {
-  alert('YOU LOSE :(')//location.reload()
+  alert('YOU LOSE :(')
+  location.reload()
 }
 if (boxLeft > 296 && boxTop > 180) {
-  alert('YOU WON!!')//location.reload()
+  alert('YOU WON!! Continue onto the next page.')
 }
      // banner.innerHTML = 'YOU WON!!!!!';
       //document.removeEventListener('keyup', game);

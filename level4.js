@@ -1,11 +1,11 @@
-document.onkeydown = checkKey;
-let box1 = document.getElementById('box')
-let cube = $('.cube');
+ document.onkeydown = checkKey;
+ let box1 = document.getElementById('box')
+ let cube = $('.cube');
 //let cube = document.getElementByClassName('cube')
 
-function checkKey(e) {
+function checkKey(z) {
 
-  event   = e || window.event;
+  event   = z
   keycode = event.keyCode;
 
   boxTop  = $('#box').position().top;
@@ -33,25 +33,37 @@ function checkKey(e) {
  }
 
 
-if (boxTop < -215) {
-  alert('YOU LOSE :(') //location.reload()
+if (boxTop > 10) {
+  alert('YOU LOSE:(')
+  location.reload()
 }
 if (boxLeft < -1) {
-  alert('YOU LOSE :(')//location.reload()
+  alert('YOU LOSE :(')
+  location.reload()
 }
-if (boxTop > -196 && boxLeft < 99 && boxTop < 290) {
-  alert('YOU LOSE :(')//location.reload()
-}
-if (boxLeft > 308) {
-  alert('YOU LOSE :(')//location.reload()
-}
-if (boxLeft > 295 && boxTop > -20) {
-  alert('YOU WON!!')//location.reload()
-
-      // banner.innerHTML = 'YOU WON!!!!!';
-      //document.removeEventListener('keyup', game);
+if (boxTop < -212) {
+   alert('YOU LOSE :(')
+   location.reload()
    }
-window.reload
+ if (boxLeft > 20 && boxLeft < 99 && boxTop > -196) {
+   alert('YOU LOSE :(')
+   location.reload()
+   }
+ if (boxLeft > 110 && boxLeft < 208 && boxTop > -120) {
+   alert('YOU LOSE:(')
+   location.reload()
+  }
+  if (boxLeft > 110 && boxLeft < 208 && boxTop < -130) {
+   alert('YOU LOSE:(')
+   location.reload()
+  }
+  if (boxLeft> 220) {
+    alert('YOU LOSE:(')
+    location.reload()
+  }
+  if (boxLeft > 205 && boxTop < -185) {
+    alert ('YOU WIN!! Continue onto the next page.')
+  }
 
   $('#box').css({top: boxTop, left: boxLeft});
 }

@@ -68,7 +68,7 @@ NEED GREEN PLATFORM TO APPEAR ONTOP OF WHITE CONTAINER
   margin-top: 194px;
 }
 #finish4 {
-  width: 15px;
+  width: 20px;
   height: 47px;
   color: green;
   background-color: green;
@@ -153,7 +153,7 @@ NEED GREEN PLATFORM TO APPEAR ONTOP OF WHITE CONTAINER
 }
 .container4 {
   position: absolute;
-  width:15px;
+  width:20px;
   height:220px;
   margin-top: 120px;
   margin-left: 30px;
@@ -164,7 +164,7 @@ NEED GREEN PLATFORM TO APPEAR ONTOP OF WHITE CONTAINER
 .bottomContainer4 {
  position: absolute;
   width:100px;
-  height:15px;
+  height:20px;
   margin-top: -10px;
   box-sizing: border-box;
   /*border: 1px solid black;*/
@@ -172,7 +172,7 @@ NEED GREEN PLATFORM TO APPEAR ONTOP OF WHITE CONTAINER
 }
 .sideContainer4 {
  position: absolute;
-  width:15px;
+  width:20px;
   height:100px;
   margin-top: 0px;
   margin-left: 100px;
@@ -182,7 +182,7 @@ NEED GREEN PLATFORM TO APPEAR ONTOP OF WHITE CONTAINER
 }
 .sideContainer4a {
  position: absolute;
-  width:15px;
+  width:20px;
   height:100px;
   margin-top: 0px;
   margin-left: 110px;
@@ -193,8 +193,8 @@ NEED GREEN PLATFORM TO APPEAR ONTOP OF WHITE CONTAINER
 .sideContainer4b {
  position: absolute;
   width:100px;
-  height:15px;
-  margin-top: 85px;
+  height:20px;
+  margin-top: 80px;
   margin-left: -100px;
   box-sizing: border-box;
   /*border: 1px solid black;*/
