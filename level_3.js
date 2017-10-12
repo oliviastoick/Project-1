@@ -33,23 +33,24 @@ function checkKey(e) {
  }
 
 
-if (boxLeft > 534) {
-  alert('YOU LOSE :(')
+if (boxTop < -211) {
+  alert('YOU LOSE :(') //location.reload()
 }
 if (boxLeft < -1) {
-  alert('YOU LOSE :(')
+  alert('YOU LOSE :(')//location.reload()
 }
-if (boxTop < -8) {
-  alert('YOU LOSE :(')
+if (boxTop > -190 && boxLeft > 11 && boxLeft < 290) {
+  alert('YOU LOSE :(')//location.reload()
 }
-if (boxTop > 38 && boxLeft < 490) {
-  alert('YOU LOSE :(')
+if (boxLeft > 308) {
+  alert('YOU LOSE :(')//location.reload()
 }
-if (boxLeft > 490 && boxTop > 180) {
-  alert('YOU WON!!')
-}
-     // banner.innerHTML = 'YOU WON!!!!!';
+if (boxLeft > 295 && boxTop > -20) {
+  alert('YOU WON!!')//location.reload()
+
+      // banner.innerHTML = 'YOU WON!!!!!';
       //document.removeEventListener('keyup', game);
+   }
 window.reload
 
   $('#box').css({top: boxTop, left: boxLeft});
