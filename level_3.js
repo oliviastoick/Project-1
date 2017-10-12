@@ -1,7 +1,15 @@
 document.onkeydown = checkKey;
 let box1 = document.getElementById('box')
-let cube = $('.cube');
+// let cube = $('.cube');
 //let cube = document.getElementByClassName('cube')
+function cube(id, height, width) {
+  let result={}
+  result.element = id
+  result.height = height
+  result.width = width
+  return result
+}
+cube('cube', 15, 15)
 
 function checkKey(z) {
 
