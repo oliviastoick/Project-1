@@ -1,7 +1,16 @@
  document.onkeydown = checkKey;
  let box1 = document.getElementById('box')
- let cube = $('.cube');
+ //let cube = $('.cube');
 //let cube = document.getElementByClassName('cube')
+function cube(id, height, width) {
+  let result={}
+  result.element = id
+  result.height = height
+  result.width = width
+  return result
+}
+cube('cube', 15, 15)
+
 
 function checkKey(z) {
 
@@ -32,7 +41,7 @@ function checkKey(z) {
    console.log(boxTop)
  }
 
-
+//Losing Statements
 if (boxTop > 10) {
   alert('YOU LOSE:(')
   location.reload()
@@ -61,6 +70,7 @@ if (boxTop < -212) {
     alert('YOU LOSE:(')
     location.reload()
   }
+  //Winning Statements
   if (boxLeft > 205 && boxTop < -185) {
     alert ('YOU WIN!! Continue onto the next page.')
   }

@@ -15,7 +15,6 @@ function checkKey(z) {
 
   event   = z;
   keycode = event.keyCode;
-
   boxTop  = $('#box').position().top;
   boxLeft = $('#box').position().left;
 
@@ -40,7 +39,7 @@ function checkKey(z) {
    console.log(boxTop)
  }
 
-
+//losing statements
 if (boxTop < -211) {
   alert('YOU LOSE :(')
   location.reload()
@@ -57,14 +56,13 @@ if (boxLeft > 308) {
   alert('YOU LOSE :(')
   location.reload()
 }
+//winning statement
 if (boxLeft > 295 && boxTop > -20) {
   alert('YOU WON!! Continue onto the next page.')
   location.reload()
 
-      // banner.innerHTML = 'YOU WON!!!!!';
-      //document.removeEventListener('keyup', game);
    }
-window.reload
+
 
   $('#box').css({top: boxTop, left: boxLeft});
 }

@@ -1,7 +1,16 @@
 document.onkeydown = checkKey;
 let box1 = document.getElementById('box')
-let cube = $('.cube');
+//let cube = $('.cube');
 //let cube = document.getElementByClassName('cube')
+function cube(id, height, width) {
+  let result={}
+  result.element = id
+  result.height = height
+  result.width = width
+  return result
+}
+cube('cube', 15, 15)
+
 
 function checkKey(z) {
 
@@ -32,7 +41,7 @@ function checkKey(z) {
    console.log(boxTop)
  }
 
-
+//losing statement
 if (boxLeft > 316) {
   alert('YOU LOSE :(')
   location.reload()
@@ -49,12 +58,12 @@ if (boxTop > 20 && boxLeft < 296) {
   alert('YOU LOSE :(')
   location.reload()
 }
+//winning statement
 if (boxLeft > 296 && boxTop > 180) {
   alert('YOU WON!! Continue onto the next page.')
 }
-     // banner.innerHTML = 'YOU WON!!!!!';
-      //document.removeEventListener('keyup', game);
-window.reload
+
+
 
   $('#box').css({top: boxTop, left: boxLeft});
 }
