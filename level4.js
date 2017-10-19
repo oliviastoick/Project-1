@@ -2,14 +2,15 @@
  let box1 = document.getElementById('box')
  //let cube = $('.cube');
 //let cube = document.getElementByClassName('cube')
-function cube(id, height, width) {
+function cube( height, width) {
   let result={}
-  result.element = id
   result.height = height
   result.width = width
   return result
 }
-cube('cube', 15, 15)
+ let cube4 = cube( 15, 15)
+
+ $('.cube3').css(cube4)
 
 
 function checkKey(z) {
